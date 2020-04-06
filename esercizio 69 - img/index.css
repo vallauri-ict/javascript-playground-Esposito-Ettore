@@ -1,0 +1,40 @@
+*
+{
+    margin: 0;
+    padding: 0;
+}
+html
+{
+    height: 100%;
+}
+body
+{
+    height: 100%;
+}
+#wrapper
+{
+    width: 1200px;
+    height: 100%;
+    margin: 0 auto;
+    padding: 15px;
+    background-color: #fff;
+}
+#wrapper h1
+{
+    text-align: center;
+}
+#wrapper *
+{
+    margin: 6px;
+}
+#imgBox, #imgRoll
+{
+    width: 720px;
+    height: 360px;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+input[type=radio]
+{
+    margin: 5px auto;
+}
