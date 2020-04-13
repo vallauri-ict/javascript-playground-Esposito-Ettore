@@ -1,0 +1,57 @@
+<!DOCTYPE html>  <!-- documento html5 -->
+<html lang="it">
+	<head>
+		<meta charset="UTF-8" />
+		<title> Esercizio 71 </title>
+        <link rel="stylesheet" href="index.css">
+		<script type="application/javascript" src="index.js"></script>
+	</head>
+	<body>
+		<div id="wrapper">
+			<h1> Valutazione form </h1>
+			<form action="" method="post" name="register" onsubmit="return ValidaForm()">
+				<br/><br/>
+				<label> Cognome: <input type="text" max="40" name="Cong" id="Cong"> </label>
+				<br/><br/>
+				<label> Nome: <input type="text" max="30" name="Nom" id="Nom"> </label>
+				<br/><br/>
+				<label> Matricola: <input type="text" max="12" name="Matr" id="Matr"> </label>
+				<br/><br/>
+				<label> Regione:
+					<select name="Reg" id="Reg">
+						<option value="nessuna" selected></option>
+						<option value="valdaosta">Val d’Aosta</option>
+						<option value="piemonte">Piemonte</option>
+						<option value="liguria">Liguria</option>
+						<option value="lombardia">Lombardia</option>
+						<option value="veneto">Veneto</option>
+						<option value="trentino">Trentino Alto Adige</option>
+						<option value="friuli">Friuli Venezia-Giulia</option>
+						<option value="emilia">Emilia-Romagna</option>
+						<option value="toscana">Toscana</option>
+						<option value="marche">Marche</option>
+						<option value="umbria">Umbria</option>
+						<option value="lazio">Lazio</option>
+						<option value="abruzzo">Abruzzo</option>
+						<option value="molise">Molise</option>
+						<option value="campania">Campania</option>
+						<option value="basilicata">Basilicata</option>
+						<option value="puglia">Puglia</option>
+						<option value="calabria">Calabria</option>
+						<option value="sicilia">Sicilia</option>
+						<option value="sardegna">Sardegna</option>
+					</select>
+				</label>
+				<br/><br/>
+				<label> E-Mail: <input type="text" max="30" name="Email" id="Email"> </label>
+				<br/><br/>
+				<label> Telefono: <input type="text" max="15" name="Tel" id="Tel"> </label>
+				<br/><br/>
+				<label> Richieste Aggiuntive: <textarea name="extra" id="extra" cols="60" rows="12"></textarea> </label>
+				<br/><br/>
+				<input type="reset" name="Reset" id="Reset" value="Reset">
+				<input type="submit" name="Sub" id="Sub" value="Registra">
+			</form>
+		</div>
+	</body>
+</html>
