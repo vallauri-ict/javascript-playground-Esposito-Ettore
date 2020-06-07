@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="it">
+    <head>
+        <meta charset="UTF-8" />
+        <title> Esposito </title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="icon" href="img/icon.png"/>
+        <link rel="stylesheet" type="text/css" href="index.css">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+        <script type="application/javascript" src="index.js"></script>
+        <script src="https://kit.fontawesome.com/b78ee020e0.js" crossorigin="anonymous"></script>
+        <style>
+            img
+            {
+                transition: transform 1s;
+            }
+
+            img:hover
+            {
+                transform: scale(1.4);
+            }
+        </style>
+    </head>
+    <body>
+        <div class="wrapper">
+            <nav class="navbar fixed-top navbar-expand-md navbar-dark bg-dark">
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav mr-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html"> <i class="fas fa-home icon"></i> Home</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <i class="fas fa-gamepad icon"></i> Interessi
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <a class="dropdown-item" href="videogiochi.html">Videogiochi</a>
+                                <a class="dropdown-item" href="anime.html">Anime</a>
+                                <a class="dropdown-item" href="plaestra.html">Palestra</a>
+                                <a class="dropdown-item" href="musica.html">Musica</a>
+                            </div>
+                        </li>
+                        <li class="nav-item active">
+                            <a class="nav-link" href="#"><i class="fas fa-user icon"></i> Vita</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="curriculum.html"><i class="fas fa-file-alt icon"></i> Curriculum</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="optionDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <i class="fas fa-cog"></i> Opzioni
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="optionDropdown">
+                                <div class="custom-control custom-switch">
+                                    <form style="padding-left: 10px;">
+                                        <input type="checkbox" class="custom-control-input" id="chkGrande">
+                                        <label class="custom-control-label" for="chkGrande">Testo grande</label>
+                                        <br/><br/>
+                                        <label for="rngContrasto" style="margin-left: -35px;">Contrasto</label>
+                                        <input type="range" class="custom-range" style="margin-left: -35px;" min="0" max="0.9" step="0.1" id="rngContrasto">
+                                    </form>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+            <div class="container">
+                <div class="row">
+                    <div class="col">
+                        <h1 class="text-center"> Ettore Esposito </h1>
+                    </div>
+                </div>
+                <div class="row justify-content-center">
+                    <div class="col-11 col-md-12">
+                        <h3> Vita </h3>
+                        <p>
+                            Sono nato a Cuneo il 3 febbraio 2003. I miei genitori sono italiani e si chiamano Daniele, che lavora per l'Alstom,
+                            e Loretta, che lavora come direttrice di un asilo nido e al municipio di Savigliano.<br/>
+                            Sono figlio unico.<br/>
+                            Ho due cugini di nome Stefano e Letizia, il primo è più grande di me di un anno, mentre la seconda
+                            di qualche mese più giovane.
+                        </p>
+                    </div>
+                </div>
+                <div class="row justify-content-center">
+                    <div class="col-11 col-md-12">
+                        <h4> Infanzia </h4>
+                        <p>
+                            Sono andato nell'asilo nido gestito da mia madre, poi, all'età di 3 anni, sono andato a una scuola
+                            materna vicino a casa mia.<br/>
+                            Alle elementari ho frequentato la "Santorre di Santarosa", che i miei genitori hanno scelto sempre
+                            per la vicinanza a casa, così per potermi far andare e tornare a casa senza dovermici accompaganare.<br/>
+                            In 4<sup>a</sup> elementare sono andato con i miei genitori e i nonni a Londra in vacanza per una
+                            settimana; abbiamo affittato un alloggio vicino allo stadio dell'Arsenal. Durante questa vacanza
+                            abbiamo visto il Big Ben, il London eye, il London bridge e Piccadilly circus.
+                        </p>
+                    </div>
+                </div>
+                <div class="row justify-content-center">
+                    <div class="col-11 col-md-12">
+                        <h4> Adolescenza </h4>
+                        <p>
+                            Alla fine delle elementari sono andato alle medie "Schiapparelli", dove non è successo nulla di particolare
+                            tranne la scoperta del mio amore per il nuoto, sport rilassante, non stanca troppo e soprattutto
+                            non ti fa sudare.<br/>
+                            Alla scelta della scuola superiore ero indeciso tra il Geometra, Liceo scientifico, Meccatronica
+                            e Informatica. Alla fine ho scelto Meccatronica, che ho frequentato un solo anno, scoprendo
+                            il mio talento per l'informatica. Quindi per il secondo anno ho cambiato indirizzo restando nella
+                            stessa scuola: il "Vallauri" a Fossano.<br/>
+                            Durante i primi due anni ho fatto due vacanze con i miei genitori, la prima a Parigi, la seconda
+                            è stata un lungo viaggio in macchina lungo Francia e Spagna. Entrambe sono durate una settimana.<br/>
+                            Sfortunatamente durante il terzo anno il corso di nuoto a cui partecipavo era pieno, così ho dovuto
+                            cambiare sport, abbonandomi alla palestra.<br/>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+    </body>
+</html>

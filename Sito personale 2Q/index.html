@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="it">
+    <head>
+        <meta charset="UTF-8" />
+        <title> Esposito </title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="icon" href="img/icon.png"/>
+        <link rel="stylesheet" type="text/css" href="index.css">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+        <script type="application/javascript" src="index.js"></script>
+        <script src="https://kit.fontawesome.com/b78ee020e0.js" crossorigin="anonymous"></script>
+    </head>
+    <body>
+        <div class="wrapper">
+            <nav class="navbar fixed-top navbar-expand-md navbar-dark bg-dark">
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav mr-auto">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="#"> <i class="fas fa-home icon"></i> Home</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <i class="fas fa-gamepad icon"></i> Interessi
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <a class="dropdown-item" href="videogiochi.html">Videogiochi</a>
+                                <a class="dropdown-item" href="anime.html">Anime</a>
+                                <a class="dropdown-item" href="plaestra.html">Palestra</a>
+                                <a class="dropdown-item" href="musica.html">Musica</a>
+                            </div>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="vita.html"><i class="fas fa-user icon"></i> Vita</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="curriculum.html"><i class="fas fa-file-alt icon"></i> Curriculum</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="optionDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <i class="fas fa-cog"></i> Opzioni
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="optionDropdown">
+                                <div class="custom-control custom-switch">
+                                    <form style="padding-left: 10px;">
+                                        <input type="checkbox" class="custom-control-input" id="chkGrande">
+                                        <label class="custom-control-label" for="chkGrande">Testo grande</label>
+                                        <br/><br/>
+                                        <label for="rngContrasto" style="margin-left: -35px;">Contrasto</label>
+                                        <input type="range" class="custom-range" style="margin-left: -35px;" min="0" max="0.9" step="0.1" id="rngContrasto">
+                                    </form>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+            <div class="container">
+                <div class="row">
+                    <div class="col">
+                        <h1 class="text-center"> Ettore Esposito </h1>
+                    </div>
+                </div>
+                <div class="row justify-content-center">
+                    <div class="col-11 col-md-12">
+                        <div>
+                            <h3> Introduzione </h3>
+                            <p>
+                                Sono un ragazzo di 17 anni. <br/>
+                                Abito a Savigliano e vado a scuola a Fossano, per viaggiare prendo il bus.<br/>
+                                Sono figlio unico e vivo con i miei genitori.<br/>
+                                Sono italiano, per metà dal Piemonte da parte di mia madre, e da mio padre sono Napoletano, Trentino
+                                e Emiliano.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="row justify-content-center">
+                    <div class="col-11 col-md-12">
+                        <h3> Personalità </h3>
+                        <p>
+                            Sono un ragazzo tranquillo e pigro. Sono asociale e non adoro parlare nè stare con troppe persone
+                            tranne per alcune eccezioni.<br/>
+                            Sono abbastanza inteligente, ma la mia memoria è davvero poca.<br/>
+                            Sono tirchio, ma abbastanza gentile ed educato.<br/>
+                            Sono diligente, disordinato.<br/>
+                            Non bevo e non fumo e sono schizzinoso.
+                        </p>
+                    </div>
+                </div>
+                <div class="row justify-content-center">
+                    <div class="col-11 col-md-12">
+                        <h3> Passioni </h3>
+                        <p>
+                            Nonostante sia pigro vado in palestra 4 volte a settimana, anche se preferirei andare a fare
+                            corsi di nuoto.<br/>
+                            La mia giornata la passo principalmente al computer a giocare a videogiochi o a guardare anime,
+                            ma comunque non manco mai alle mie responsabilità.<br/>
+                            Anche l'informatica è molto interessante, infatti a volte mi metto a programmare cose anche se non
+                            sono costretto a farlo per scuola.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+    </body>
+</html>

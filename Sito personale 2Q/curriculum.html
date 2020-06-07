@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="it">
+    <head>
+        <meta charset="UTF-8" />
+        <title> Esposito </title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="icon" href="img/icon.png"/>
+        <link rel="stylesheet" type="text/css" href="index.css">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+        <script src="https://kit.fontawesome.com/b78ee020e0.js" crossorigin="anonymous"></script>
+        <script type="application/javascript" >
+            let _iframe, _wrapper;
+            window.onload = function inizializza()
+            {
+                _wrapper = document.getElementsByClassName("wrapper")[0];
+                _iframe = document.getElementsByTagName("iframe")[0];
+                let _h4 = document.getElementsByTagName("h4")[0];
+
+                _iframe.style.height = (window.innerHeight - 250) + "px";
+                _wrapper.style.height = window.innerHeight + "px";
+
+                if (document.cookie != "")
+                {
+                    let vet = document.cookie.split('-');
+                    _wrapper.style.backgroundColor = "rgba(0,0,0," + vet[2] + ")";
+                    if(vet[1] == 0)
+                        _h4.style.fontSize = "2.5em";
+                    else
+                        _h4.style.fontSize = "2.8em";
+                }
+                else
+                    document.cookie = "opt-0-0.3";
+            }
+            window.onresize = function resize()
+            {
+                _iframe.style.height = (window.innerHeight - 250) + "px";
+                _wrapper.style.height = window.innerHeight + "px";
+            }
+        </script>
+    </head>
+    <body>
+        <div class="wrapper">
+            <nav class="navbar fixed-top navbar-expand-md navbar-dark bg-dark">
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav mr-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html"> <i class="fas fa-home icon"></i> Home</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <i class="fas fa-gamepad icon"></i> Interessi
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <a class="dropdown-item" href="videogiochi.html">Videogiochi</a>
+                                <a class="dropdown-item" href="anime.html">Anime</a>
+                                <a class="dropdown-item" href="plaestra.html">Palestra</a>
+                                <a class="dropdown-item" href="musica.html">Musica</a>
+                            </div>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="vita.html"><i class="fas fa-user icon"></i> Vita</a>
+                        </li>
+                        <li class="nav-item active">
+                            <a class="nav-link" href="#"><i class="fas fa-file-alt icon"></i> Curriculum</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+            <div class="container">
+                <div class="row">
+                    <div class="col">
+                        <h1 class="text-center title"> Ettore Esposito </h1>
+                    </div>
+                </div>
+                <div class="row justify-content-center">
+                    <div class="col-11 col-md-12">
+                        <h4 class="title"> Curriculum </h4>
+                        <iframe src="curriculum.pdf" class="w-100"> </iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+
+    </body>
+</html>

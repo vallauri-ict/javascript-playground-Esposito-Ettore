@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="it">
+    <head>
+        <meta charset="UTF-8" />
+        <title> Esposito </title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="icon" href="img/icon.png"/>
+        <link rel="stylesheet" type="text/css" href="index.css">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+        <script type="application/javascript" src="index.js"></script>
+        <script src="https://kit.fontawesome.com/b78ee020e0.js" crossorigin="anonymous"></script>
+        <style>
+            img
+            {
+                transition: transform 1s;
+            }
+
+            img:hover
+            {
+                transform: scale(1.4);
+            }
+
+            .music
+            {
+                color: #fff;
+                text-decoration: underline;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="wrapper">
+            <nav class="navbar fixed-top navbar-expand-md navbar-dark bg-dark">
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav mr-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html"> <i class="fas fa-home icon"></i> Home</a>
+                        </li>
+                        <li class="nav-item dropdown active">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <i class="fas fa-gamepad icon"></i> Interessi
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <a class="dropdown-item" href="videogiochi.html">Videogiochi</a>
+                                <a class="dropdown-item" href="anime.html">Anime</a>
+                                <a class="dropdown-item" href="plaestra.html">Palestra</a>
+                                <a class="dropdown-item" href="#">Musica</a>
+                            </div>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="vita.html"><i class="fas fa-user icon"></i> Vita</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="curriculum.html"><i class="fas fa-file-alt icon"></i> Curriculum</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="optionDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <i class="fas fa-cog"></i> Opzioni
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="optionDropdown">
+                                <div class="custom-control custom-switch">
+                                    <form style="padding-left: 10px;">
+                                        <input type="checkbox" class="custom-control-input" id="chkGrande">
+                                        <label class="custom-control-label" for="chkGrande">Testo grande</label>
+                                        <br/><br/>
+                                        <label for="rngContrasto" style="margin-left: -35px;">Contrasto</label>
+                                        <input type="range" class="custom-range" style="margin-left: -35px;" min="0" max="0.9" step="0.1" id="rngContrasto">
+                                    </form>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+            <div class="container">
+                <div class="row">
+                    <div class="col">
+                        <h1 class="text-center"> Ettore Esposito </h1>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col">
+                        <h3> Musica </h3>
+                        <p>
+                            La musica è l'arte dei suoni. È composta dal suono degli strumenti e della voce.<br/>
+                            Personalmente non adoro la musica italiana, in qunto la lingua è lenta e perché l'argomento principale è
+                            l'amore che rende, dopo un po', le canzoni tutte uguali.
+                            Io preferisco canzoni dal ritmo veloce e per questo preferisco canzoni in inglese.
+                            Questa è una lista delle mie band e canzoni preferite:
+                        </p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-5 overflow-hidden align-items-center justify-content-center">
+                        <img src="img/ImagineDragons.jpg" class="w-100">
+                    </div>
+                    <div class="col-7">
+                        <h4> Imagine Dragons </h4>
+                        <p class="desc">
+                            Sono un gruppo statunitense composto da 4 membri. Il loro genere è il rock, anche se
+                            è anche influenzato dal pop. I membri sono 4: Dan il cantante, Wayne alla chitarra,
+                            Ben al basso e Daniel alla batterie.
+                            I loro migliori pezzi sono
+                            "<a href="https://www.youtube.com/watch?v=fKopy74weus" target="_blank" class="music">Thunder</a>",
+                            "<a href="https://www.youtube.com/watch?v=0I647GU3Jsc" target="_blank" class="music">Natural</a>",
+                            "<a href="https://www.youtube.com/watch?v=ktvTqknDobU" target="_blank" class="music">Radiactive</a>" e
+                            "<a href="https://www.youtube.com/watch?v=7wtfhZwyrcc" target="_blank" class="music">Beliver</a>".
+                        </p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-7">
+                        <h4> Fall out Boy </h4>
+                        <p class="desc">
+                            Anche questo gruppo è formato da 4 membri. Il loro stile è un'unione tra pop e rock.
+                            I membri sono il cantante Patrick, il chitarrista Joe, Peter il bassista e Andrew il batterista.
+                            Le loro migliori canzoni sono
+                            "<a href="https://www.youtube.com/watch?v=5hDZbroaQDc" target="_blank" class="music">Phoenix</a>",
+                            "<a href="https://www.youtube.com/watch?v=l9PxOanFjxQ" target="_blank" class="music">Immortals</a>",
+                            "<a href="https://www.youtube.com/watch?v=LBr7kECsjcQ" target="_blank" class="music">Centuries</a>" e
+                            "<a href="https://www.youtube.com/watch?v=LkIWmsP3c_s" target="_blank" class="music">My song know what you did in the dark</a>".
+                        </p>
+                    </div>
+                    <div class="col-5 overflow-hidden align-items-center justify-content-center">
+                        <img src="img/FalloutBoy.jpg" style="transform-origin: top center;" class="w-100">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-5 overflow-hidden align-items-center justify-content-center">
+                        <img src="img/Skillet.jpg" class="w-100">
+                    </div>
+                    <div class="col-7">
+                        <h4> Skillet </h4>
+                        <p class="desc">
+                            Altra band formata da 4 membri. Sono un gruppo che suona diversi generi di rock.
+                            I membri sono John il cantante, Korey alla tastiera, Jen alla batteria e Seth alla batteria.
+                            Tra le loro migliori canzoni ci sono
+                            "<a href="https://www.youtube.com/watch?v=uGcsIdGOuZY" target="_blank" class="music">Hero</a>",
+                            "<a href="https://www.youtube.com/watch?v=1mjlM_RnsVE" target="_blank" class="music">Monster</a>",
+                            "<a href="https://www.youtube.com/watch?v=Qzw6A2WC5Qo" target="_blank" class="music">Feel invicibile</a>" e
+                            "<a href="https://www.youtube.com/watch?v=SKnRdQiH3-k" target="_blank" class="music">Resistence</a>".
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+    </body>
+</html>

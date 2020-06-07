@@ -1,0 +1,119 @@
+@font-face {
+    font-family: Title;
+    src: local(Title),
+    url(font/Title.ttf)  format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: Roboto;
+    src: local(Title),
+    url(font/Roboto-Regular.ttf)  format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body
+{
+    background-image: url("img/bg.jpg");
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    background-attachment: fixed;
+    color: #fff !important;
+    /*font-size: 16px; default di boostrap*/
+}
+
+.wrapper
+{
+    background-color: rgba(0,0,0,0.3);
+    overflow: auto;
+}
+
+p, .text
+{
+    font-size: 1.7em;
+    font-family: Roboto;
+}
+
+.nav-link, .dropdown-item
+{
+    font-size: 13pt; !important;
+}
+
+.desc
+{
+    font-size: 1.3em;
+}
+
+h1
+{
+
+    font-size: 5em !important;
+    font-family: Title;
+    padding-top: 75px;
+}
+
+h3
+{
+    font-size: 3em !important;
+}
+
+h4
+{
+    font-size: 2.5em !important;
+}
+
+@media (max-width: 1199.98px)
+{
+    body
+    {
+        font-size: 14px !important;
+    }
+
+    .nav-link, .dropdown-item
+    {
+        font-size: 13pt; !important;
+    }
+}
+
+@media (max-width: 991.98px)
+{
+    body
+    {
+        font-size: 11px !important;
+    }
+
+    .nav-link, .dropdown-item
+    {
+        font-size: 11pt; !important;
+    }
+}
+
+@media (max-width: 767.98px)
+{
+    body
+    {
+        font-size: 8px !important;
+    }
+
+    .nav-link, .dropdown-item
+    {
+        font-size: 10pt; !important;
+    }
+}
+
+@media (max-width: 575.98px)
+{
+    body
+    {
+        font-size: 5px !important;
+    }
+
+    .nav-link, .dropdown-item
+    {
+        font-size: 8pt; !important;
+    }
+}
+
+

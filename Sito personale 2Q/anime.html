@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="it">
+    <head>
+        <meta charset="UTF-8" />
+        <title> Esposito </title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="icon" href="img/icon.png"/>
+        <link rel="stylesheet" type="text/css" href="index.css">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+        <script type="application/javascript" src="index.js"></script>
+        <script src="https://kit.fontawesome.com/b78ee020e0.js" crossorigin="anonymous"></script>
+        <style>
+            img
+            {
+                transition: transform 1s;
+            }
+
+            img:hover
+            {
+                transform: scale(1.5);
+            }
+        </style>
+    </head>
+    <body>
+        <div class="wrapper">
+            <nav class="navbar fixed-top navbar-expand-md navbar-dark bg-dark">
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav mr-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html"> <i class="fas fa-home icon"></i> Home</a>
+                        </li>
+                        <li class="nav-item dropdown active">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <i class="fas fa-gamepad icon"></i> Interessi
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <a class="dropdown-item" href="videogiochi.html">Videogiochi</a>
+                                <a class="dropdown-item" href="#">Anime</a>
+                                <a class="dropdown-item" href="plaestra.html">Palestra</a>
+                                <a class="dropdown-item" href="musica.html">Musica</a>
+                            </div>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="vita.html"><i class="fas fa-user icon"></i> Vita</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="curriculum.html"><i class="fas fa-file-alt icon"></i> Curriculum</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="optionDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <i class="fas fa-cog"></i> Opzioni
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="optionDropdown">
+                                <div class="custom-control custom-switch">
+                                    <form style="padding-left: 10px;">
+                                        <input type="checkbox" class="custom-control-input" id="chkGrande">
+                                        <label class="custom-control-label" for="chkGrande">Testo grande</label>
+                                        <br/><br/>
+                                        <label for="rngContrasto" style="margin-left: -35px;">Contrasto</label>
+                                        <input type="range" class="custom-range" style="margin-left: -35px;" min="0" max="0.9" step="0.1" id="rngContrasto">
+                                    </form>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+            <div class="container">
+                <div class="row">
+                    <div class="col">
+                        <h1 class="text-center"> Ettore Esposito </h1>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col">
+                        <h3> Anime </h3>
+                        <p class="desc">
+                            Gli anime (abbreviazione di "animation") sono "cartoni animati" giapponesi, generalmente
+                            derivano da un manga: un fumetto sempre di origine giapponese.<br/>
+                            Spesso si pensa che gli anime siano guardati solo dai nerd, ma essi sono
+                            molto simili alle serie tv che i ragazzi guardano.<br/>
+                            Questa che segue è una lista dei miei anime preferiti:
+                        </p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col overflow-hidden align-items-center">
+                        <a class="btn" data-toggle="collapse" href="#MadeInAbyss" role="button" aria-expanded="false" aria-controls="multiCollapseExample1"><img src="img/MadeInAbyss.jpg" class="w-100"></a>
+                    </div>
+                    <div class="col overflow-hidden align-items-center">
+                        <a class="btn" data-toggle="collapse" href="#ThePromisedNeverland" role="button" aria-expanded="false" aria-controls="multiCollapseExample1"><img src="img/ThePromisedNeverland.jpg" class="w-100"></a>
+                    </div>
+                    <div class="col overflow-hidden align-items-center">
+                        <a class="btn" data-toggle="collapse" href="#DeathNote" role="button" aria-expanded="false" aria-controls="multiCollapseExample1"><img src="img/DeathNote.jpg" class="w-100"></a>
+                    </div>
+                </div>
+                <div class="row" id="first">
+                    <div class="col rounded" style="border: 2px solid #fff;">
+                        <div class="collapse show" id="MadeInAbyss" data-parent="#first">
+                            <div class="card-body">
+                                <h4 style="text-align: left"> Made in abyss </h4>
+                                <p class="desc">
+                                    La storia è ambientata in un mondo in cui è apparsa una voragine di cui non si conosce la profondità.
+                                    Nella voragine sono presenti un ecosistema sconosciuto e gli
+                                    artefatti di una civiltà antica.<br/>
+                                    Alcune persone iniziano a esplorare
+                                    la voragine alla ricerca degli artefatti, per poterli poi vendere.<br/>
+                                    Una maledizione, però, colpisce chiunque durante la risalita causando
+                                    problemi fisici che peggiorano partendo da una profondità maggiore.<br/>
+                                    La storia parla di una bambina che si sta addestrando a diventare esploratrice per raggiungere la
+                                    madre, una delle migliori esploratrici, sul fondo dell'abisso. Un barlume di speranza giunge con
+                                    l'arrivo di Reg: un robot che dice di arrivare dal fondo, apparentemente mandato dalla
+                                    madre prorprio per proteggere la figlia. Reg purtroppo, però, ha perso la memoria in un incidente.<br/>
+                                    L'avventura è avvincente e piena di suspence, a volte anche macabra e raccapricciante nonostante,
+                                    a una prima occhiata, possa sembrare una storia per bambini.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="collapse" id="ThePromisedNeverland" data-parent="#first">
+                            <div class="card-body">
+                                <h4 style="text-align: center"> The promised neverland </h4>
+                                <p class="desc">
+                                    Tutto inizia in un orfanotrofio.
+                                    Qui i bambini
+                                    sono accuditi con amore, nutriti, fatti giocare e istruiti.
+                                    All'età di 12 anni al massimo, devono venire adottati da una famiglia.<br/> Sono spesso
+                                    sottoposti a test per valutare la loro intelligenza. L'unica regola:
+                                    non si può uscire dall'orfanotrofio prima dell'adozione.<br/>
+                                    I tre ragazzi più grandi, Norman, Ray e Emma, sono tre autentici geni e
+                                    scoprono un'orrenda verità: il mondo è popolato da demoni che
+                                    allevano i bambini negli orfanotrofi per poi nutrirsene.<br/>
+                                    Qui inizia il loro piano per far fuggire i bambini più grandi, sopravvivere nel mondo esterno, popolato
+                                    da demoni, infine salvare tutti i bambini per fuggire tutti insieme.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="collapse" id="DeathNote" data-parent="#first">
+                            <div class="card-body">
+                                <h4 style="text-align: right"> Death Note </h4>
+                                <p class="desc">
+                                    Un ragazzo, Light Yagami, avverte da sempre qualcosa di sbagliato
+                                    nel mondo: l'esistenza dei criminali che commettono crimini.<br/>
+                                    La svolta arriva quando il Dio della Morte, Ryuk, lancia, per noia, il proprio quaderno sul mondo degli
+                                    umani: il Death Note ha il potere di uccidere chiunque il cui nome sia scritto su di esso, a patto che chi scrive conosca il suo volto.<br/>
+                                    Il quaderno viene raccolto da Light che inizia a scrivere i nomi dei criminali, con il progetto di diventare
+                                    il Dio di un nuovo mondo in cui, le persone oneste, possano vivere in pace.<br/>
+                                    Molte persone iniziano a notare la cosa e iniziano a chiamare Kira la persona
+                                    che sta facendo tutto questo. Anche i capi di stato lo notano, mettendo
+                                    quindi sulle trace di Kira "L": il miglior detective del mondo, di cui nessuno
+                                    conosce l'identità.<br/>
+                                    La sfida tra questi due geni è avvincente anche se, a volte, diventa difficile da seguire.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="collapse" id="CodeGeass" data-parent="#first">
+                            <div class="card-body">
+                                <p class="desc">
+                                    Dopo una guerra tra Giappone e Britannia, il Giappone viene
+                                    conquistato anche grazie ai robot detti Knightmares della Britannia. Dopo la conquista, il Giappone viene chiamato
+                                    "Area 11" e il popolo è costretto a vivere in ghetti all'esterno delle città, che sono abitate dai Britanni.<br/>
+                                    Nella città di Tokyo abita Lelouch Vi Britannia, figlio dell'imperatore di Britannia, fuggito assieme
+                                    alla sorella dopo l'assasinio della madre. Questo attentato ha causato alla sorella
+                                    la perdita dell'uso delle gambe e della vista.
+                                    Lelouch desidera che la sorella viva in pace e felicità, ma crede che perché questo sia possibile la Britannia debba
+                                    cadere. <br/>
+                                    Durante una battaglia in un ghetto, a cui lui ha assistito, riceve da una ragazza misteriosa
+                                    il potere del Geass, ovvero il potere di infondere cieca fedeltà e assoluta obbedienza ad ogni suo ordine
+                                    e a chiunque.<br/>
+                                    Grazie a questo potere inizia la sua battaglia, sotto il nome e la maschera di "Zero", per la
+                                    riconquista del Giappone e poi la conquista Britannia.
+                                </p>
+                                <h4 style="text-align: left"> Code Geass : Lelouch of the rebellion </h4>
+                            </div>
+                        </div>
+                        <div class="collapse" id="FullmetalAlchemist" data-parent="#first">
+                            <div class="card-body">
+                                <p class="desc">
+                                    L'alchimia permette di trasformare un oggetto
+                                    in un altro. Per usare l'alchimia bisogna però seguire la regola dello scambio equivalente:
+                                    per creare un oggetto serve sacrificare qualcosa dello stesso valore.<br/>
+                                    Due fratelli Edward e Alphonse Elric vivono in un piccolo villaggio con la madre. Il loro
+                                    padre è scomparso in guerra. Proprio dagli appunti del padre i due imparano l'alchimia
+                                    e il loro talento viene scoperto dalla madre.<br/>
+                                    Alla morte della madre, i fratelli cercano di riportarla in vita
+                                    con l'alchimia, tramite l'arte proibita della trasmutazione umana. Il costo si rivela molto elevato:
+                                    il fratello minore si ritrova privato del corpo, mentre il maggiore perde una gamba. La trasmutazione
+                                    fallisce creando una creatura incompleta, in più Edward sacrifica anche un braccio per legare l'anima
+                                    del fratello a un'armatura. Edward si fa installare delle protesi robotiche.<br/>
+                                    Inizia così il viaggio dei due alla ricerca della pietra filosofale: un oggetto che permetterà di annullare
+                                    la legge dello scabio equivalente, per poter riottenere i loro corpi completi.
+                                </p>
+                                <h4 style="text-align: center"> Fullmetal alchemist: Brotherhood </h4>
+                            </div>
+                        </div>
+                        <div class="collapse" id="AttackOnTitan" data-parent="#first">
+                            <div class="card-body">
+                                <p class="desc">
+                                    Nell'anno 700 sono apparse delle creature, nemiche naturali del genere umano, alte più di tre
+                                    metri e in grado di rigenerare quasi ogni parte del proprio corpo. Queste crature sono munite di una forza sovraumana
+                                    e non necessitano di nutrirsi nè di respirare per vivere, perché si nutrono della luce del sole.
+                                    Il loro unico punto debole è sulla parte posteriore del collo: se tagliato in profondità,
+                                    permette di uccidere questi giganti.<br/>
+                                    Ovviamente, l'umantà non può difendersi da questi mostri, quindi, gli ultimi superstiti si rifugiano
+                                    dietro tre ordini di mura, di origine sconosciuta, alte 50 metri che permettono ai sopravvissuti
+                                    di vivere in pace per 100 anni.<br/> Questa pace viene interrotta dall'improvvisa comparsa di un gigante
+                                    colossale, alto 60 metri che sfonda la porta del cerchio di mura più esterno.<br/>
+                                    Tre ragazzi, fuggiti dall'assalto, decidono di arruolarsi nell'esercito alla riconquista delle zone
+                                    perdute.
+                                </p>
+                                <h4 style="text-align: right"> Attack on Titan </h4>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col overflow-hidden align-items-center">
+                        <a class="btn" data-toggle="collapse" href="#CodeGeass" role="button" aria-expanded="false" aria-controls="multiCollapseExample1"><img src="img/CodeGeass.jpg" class="w-100"></a>
+                    </div>
+                    <div class="col overflow-hidden align-items-center">
+                        <a class="btn" data-toggle="collapse" href="#FullmetalAlchemist" role="button" aria-expanded="false" aria-controls="multiCollapseExample1"><img src="img/FullmetalAlchemist.jpg" class="w-100"></a>
+                    </div>
+                    <div class="col overflow-hidden align-items-center">
+                        <a class="btn" data-toggle="collapse" href="#AttackOnTitan" role="button" aria-expanded="false" aria-controls="multiCollapseExample1"><img src="img/AttackOnTitan.jpg" class="w-100"></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+    </body>
+</html>

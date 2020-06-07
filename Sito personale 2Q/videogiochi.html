@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="it">
+    <head>
+        <meta charset="UTF-8" />
+        <title> Esposito </title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="icon" href="img/icon.png"/>
+        <link rel="stylesheet" type="text/css" href="index.css">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+        <script type="application/javascript" src="index.js"></script>
+        <script src="https://kit.fontawesome.com/b78ee020e0.js" crossorigin="anonymous"></script>
+        <style>
+            .card-body, .card
+            {
+                background-color: transparent !important;
+                border: 1px solid #343a40;
+            }
+
+            .card-header
+            {
+                background-color: #343a40;
+                color: rgba(255, 255, 255, 0.5);
+            }
+
+            h2
+            {
+                font-size: 16px !important;
+            }
+
+            .card-header h2 button
+            {
+                color: rgba(255, 255, 255, 0.5);
+                text-decoration: none !important;
+            }
+
+            .card-header h2 button:hover
+            {
+                color: rgb(255, 255, 255);
+            }
+
+            @media (max-width: 1199.98px)
+            {
+                h2
+                {
+                    font-size: 14px !important;
+                }
+            }
+
+            @media (max-width: 991.98px)
+            {
+                h2
+                {
+                    font-size: 11px !important;
+                }
+            }
+
+            @media (max-width: 767.98px)
+            {
+                h2
+                {
+                    font-size: 8px !important;
+                }
+            }
+
+            @media (max-width: 575.98px)
+            {
+                h2
+                {
+                    font-size: 5px !important;
+                }
+            }
+        </style>
+    </head>
+    <body>
+        <div class="wrapper">
+            <nav class="navbar fixed-top navbar-expand-md navbar-dark bg-dark">
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav mr-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html"> <i class="fas fa-home icon"></i> Home</a>
+                        </li>
+                        <li class="nav-item dropdown active">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <i class="fas fa-gamepad icon"></i> Interessi
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <a class="dropdown-item" href="#">Videogiochi</a>
+                                <a class="dropdown-item" href="anime.html">Anime</a>
+                                <a class="dropdown-item" href="plaestra.html">Palestra</a>
+                                <a class="dropdown-item" href="musica.html">Musica</a>
+                            </div>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="vita.html"><i class="fas fa-user icon"></i> Vita</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="curriculum.html"><i class="fas fa-file-alt icon"></i> Curriculum</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="optionDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <i class="fas fa-cog"></i> Opzioni
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="optionDropdown">
+                                <div class="custom-control custom-switch">
+                                    <form style="padding-left: 10px;">
+                                        <input type="checkbox" class="custom-control-input" id="chkGrande">
+                                        <label class="custom-control-label" for="chkGrande">Testo grande</label>
+                                        <br/><br/>
+                                        <label for="rngContrasto" style="margin-left: -35px;">Contrasto</label>
+                                        <input type="range" class="custom-range" style="margin-left: -35px;" min="0" max="0.9" step="0.1" id="rngContrasto">
+                                    </form>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+            <div class="container">
+                <div class="row">
+                    <div class="col">
+                        <h1 class="text-center"> Ettore Esposito </h1>
+                    </div>
+                </div>
+                <div class="row justify-content-center">
+                    <div class="col-11 col-md-12">
+                        <h3> Videogiochi </h3>
+                        <p>
+                            Il primo videogioco nasce nel 1952, all'università di Cambrige grazie a uno studente, che per la
+                            propria tesi, sviluppo la versione virtuale di tris.<br/>
+                            I Videogichi iniziarono però a diventare famosi negli anni '70, quando vennero prodotte delle
+                            console, poi allestine nei luoghi pubblici.<br/>
+                            Nel '72 nacque la prima console casalinga, da collegare a una tv, grazie ad Atari.
+                            Nell'anno successivo Atari rilasciò anche il cabinato arcade del celeberrimo Pong.<br/>
+                            Da allora i videogames hanno fatto passi da gigante, diventando un passatempo famoso in tutto
+                            il mondo. Qui segue una lista dei migliori videogiochi che abbia mai provato:
+                        </p>
+                    </div>
+                </div>
+                <div class="row justify-content-center">
+                    <div class="col-11 col-md-12">
+                        <div class="accordion" id="accordion">
+                            <div class="card">
+                                <div class="card-header" id="headingOne">
+                                    <h2 class="mb-0">
+                                        <button class="btn btn-link btn-block text-left desc btm" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                            Horizon zero dawn
+                                        </button>
+                                    </h2>
+                                </div>
+
+                                <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion">
+                                    <div class="card-body" style="border: 2px solid #fff;">
+                                        <p class="desc">
+                                            Il gioco parla di un futuro distopico dove l'umanità è regredita per qualche misterioso
+                                            motivo, per il mondo sono sparse le rovine dei "precursori", come vengono chiamati dalle persone
+                                            dell'epoca. In più sono anche presenti delle macchine zoomorfe, che negli ultimi 20 anni
+                                            hanno cominciato a munirsi di armi e ad attaccare l'uomo, un tempo solo per difendersi, ma
+                                            negli ultimi tempi, hanno cominciato ad aggredirlo.<br/>
+                                            In questo mondo nasce Aloy, appartenente alla tribù dei Nora, ma esiliata alla nascita per essere
+                                            una "senza madre", viene cresciuta da un altro esiliato, di nome Rost, da cui impara a cacciare
+                                            le macchine, al solo scopo di superare la prova per uscire dallo stato di esiliata.<br/> Da piccola
+                                            cade in una rovina dove recupara un focus funzionante. Il focus è un minuscolo computer che si
+                                            attacca dietro l'orecchio e permette di analizzare la zona circostante e di trovare i punti
+                                            deboli delle corazze delle macchine.<br/>
+                                            Durante la prova viene attaccata da misteriosi assassini che tentano di ucciderla, riesce però
+                                            miracolosamente a salvarsi. Le viene poi assegnato il compito dalle matriarche, le capotribù,
+                                            di trovare questi assassini che hanno ucciso quasi ogni partecipante alla prova e trucidato
+                                            i soldati che erano andati a fermarli. Inoltre sembrano essere in grado di potenziare e
+                                            controllare le macchine a proprio vantaggio.<br/>
+                                            Aloy inizia quindi il suo viaggio alla ricerca degli assalitori, ma anche del madre, scoprendo
+                                            poi che il suo compito è molto più importante del previsto.
+                                            Dal punto di vista tecnico, tra i punti forti del gioco ci sono la grafica, l'open world, la creazione dei
+                                            personaggi e una storia molto originale. Lo stile di combattimento è basato sulla distaza tramite
+                                            l'uso di archi e fionde anch'esso strutturato molto bene, menre il combattimento ravvicinato con
+                                            la lancia è l'unico aspetto negativo in quanto non rende bene la reazione del nemico colpito che
+                                            a volte sembra quasi assente.
+                                        </p>
+                                        <div class="w-75" style="margin: 0 auto;">
+                                            <div id="Horizon" class="carousel slide" data-ride="carousel">
+                                                <div class="carousel-inner">
+                                                    <div class="carousel-item active">
+                                                        <img src="img/HorizonZeroDawn.png" class="d-block w-100">
+                                                    </div>
+                                                    <div class="carousel-item">
+                                                        <img src="img/Horizon%201.jpg" class="d-block w-100">
+                                                    </div>
+                                                    <div class="carousel-item">
+                                                        <img src="img/Horizon%202.jpg" class="d-block w-100">
+                                                    </div>
+                                                </div>
+                                                <a class="carousel-control-prev" href="#Horizon" role="button" data-slide="prev">
+                                                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                                    <span class="sr-only">Previous</span>
+                                                </a>
+                                                <a class="carousel-control-next" href="#Horizon" role="button" data-slide="next">
+                                                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                                    <span class="sr-only">Next</span>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <div class="card-header" id="headingTwo">
+                                    <h2 class="mb-0">
+                                        <button class="btn btn-link btn-block text-left collapsed desc btm" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                            Detroit: become human
+                                        </button>
+                                    </h2>
+                                </div>
+                                <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
+                                    <div class="card-body" style="border: 2px solid #fff;">
+                                        <p class="desc">
+                                            Anno 2038, una azienda chiamata Cyber Life ha creato degli androidi, che
+                                            replicano l'intelligenza umana. Essi possono venire usati per le attivita manuali come in cantieri
+                                            e fabbriche, ma sono anche venduti alle famiglie per svolgere le faccende domestiche o per
+                                            compagnia. La loro creazione ha però ha comportato la sostituzione di molti lavoratori,
+                                            con androidi molto più economici, ciò ha causato malcontento tra la gente che non vede di
+                                            buon occhio le macchine e che spesso si rivolta contro di loro.<br/> Nell'ultimo periodo, però,
+                                            alcuni androidi, i devianti, hanno sviluppato un intelligenza ancora superiore a quella fornitagli, facendo si
+                                            che siano in grado di sentire le emozioni, causando incidenti anche molto gravi nel caso che
+                                            siano maltrattati dai propri padroni.<br/>
+                                            Ci troveremo nei panni di tre androidi: il primo è Markus, androide al servizio di un anziano
+                                            artista, che tratta la macchina quasi come fosse un figlio. Durante un litigio col vero figlio
+                                            muore di attacco di cuore e Markus viene accusato di omicidio e gettato in una discarica. Uscito
+                                            di li decide di iniziare la ribellione per chiedere i diritti per gli androidi.<br/> La seconda è
+                                            Kara, anch'essa un androide domestico appartenente a un padre che ha perso il lavoro per colpa degli androidi
+                                            e a sua figlia. Kara, vedendo gli abusi che essa subisce dal padre, decide di fuggire con la piccola
+                                            per donarle una vita migliore. <br/>Il terzo ed ultimo è Connor, prototipo di androide specializzato
+                                            per l'investigazione, viene quindi messo sulle tracce dei devianti, anche se lui stesso rischia
+                                            di diventarlo.<br/>
+                                            La storia viene decisa dal giocatore tramite le sue scelte, azioni ed errori rischiando anche di
+                                            far morire uno dei personaggi in un qualunque punto del gioco. Il gameplay si basa sia su
+                                            fasi di esplorazione sia sui "quick time events" ovvero si richede la rapida pressione di un tasto. La storia, anche se è già stata usata molte volte, riesce ad essere
+                                            originale e accattivante, i personaggi sono ben dettagliati. L'unica nota negativa sono i comandi
+                                            nelle fasi di esplorazione che spesso sono poco reattivi.
+                                        </p>
+                                        <div class="w-75" style="margin: 0 auto;">
+                                            <div id="Detroit" class="carousel slide" data-ride="carousel">
+                                                <div class="carousel-inner">
+                                                    <div class="carousel-item active">
+                                                        <img src="img/DetroItBecomeHuman.jpg" class="d-block w-100">
+                                                    </div>
+                                                    <div class="carousel-item">
+                                                        <img src="img/Detroit%201.jpg" class="d-block w-100">
+                                                    </div>
+                                                    <div class="carousel-item">
+                                                        <img src="img/Detroit%202.jpg" class="d-block w-100">
+                                                    </div>
+                                                </div>
+                                                <a class="carousel-control-prev" href="#Detroit" role="button" data-slide="prev">
+                                                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                                    <span class="sr-only">Previous</span>
+                                                </a>
+                                                <a class="carousel-control-next" href="#Detroit" role="button" data-slide="next">
+                                                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                                    <span class="sr-only">Next</span>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <div class="card-header" id="headingThree">
+                                    <h2 class="mb-0">
+                                        <button class="btn btn-link btn-block text-left collapsed desc btm" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                            Undertale
+                                        </button>
+                                    </h2>
+                                </div>
+                                <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
+                                    <div class="card-body" style="border: 2px solid #fff;">
+                                        <p class="desc">
+                                            In un tempo lontano umani e mostri vivevano in pace nel mondo, ma, a seguito di una guerra,
+                                            gli umani sconfissero i mostri e non subirono perdite. Rinchiusero i mostri nel sottosuolo grazie a una barriera
+                                            creata dai sette maghi umani più potenti; l'unico modo di distruggere la bariera era sacrificare sette anime umane.
+                                            Questa vittoria schiacciante derivò dalla potenza dell'anima umana, tanto forte che tutte le
+                                            anime dei mostri messe insieme non ne eguaglierebbero una sola.<br/>
+                                            Nel presente invece, un bambino, scalando il monte Ebott, cade in una voragine e si salva grazie a un letto di fiori dorati. Scopre presto di essere caduto nel sottosuolo. Incontra un
+                                            fiore senziente, Flowey, che tenta di ucciderlo. Viene salvato da una capra antropomorfa, Toriel
+                                            che lo tratta con gentilezza e lo accoglie nella sua abitazione. Il bambino però non ha intenzione
+                                            di vivere con lei, decide quindi di fuggire superando il suo controllo e sconfiggendola. Inizia
+                                            il suo viaggio attraverso il sottosuolo per arrivare alla barriera e trovare il modo di superarla.<br/>
+                                            La particolarità del gioco è la possibilità di decidere se sconfiggere i nemici con la forza, e quindi
+                                            ucciderli, farseli amici o semplicemente fuggire: ognuna di queste scelte conduce a un finale
+                                            diverso. Altre caratteristiche del gioco sono l'ironia e la rottura della quarta parete (ovvero
+                                            il fatto che il gioco comunichi direttamente col giocatore). Il gameplay è originale: basato su
+                                            combattimenti a turni in cui il giocatore farà le sue mosse, per  poi dover schivare gli attacchi
+                                            dei nemici controllando la sua stessa anima. Infine grafiche e soundtrack, anche se non sono
+                                            di elevatissima qualità, riescono a essere molto belle.
+                                        </p>
+                                        <div class="w-75" style="margin: 0 auto;">
+                                            <div id="Undertale" class="carousel slide" data-ride="carousel">
+                                                <div class="carousel-inner">
+                                                    <div class="carousel-item active">
+                                                        <img src="img/Undertale.jpg" class="d-block w-100">
+                                                    </div>
+                                                    <div class="carousel-item">
+                                                        <img src="img/Undertale%201.png" class="d-block w-100">
+                                                    </div>
+                                                </div>
+                                                <a class="carousel-control-prev" href="#Undertale" role="button" data-slide="prev">
+                                                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                                    <span class="sr-only">Previous</span>
+                                                </a>
+                                                <a class="carousel-control-next" href="#Undertale" role="button" data-slide="next">
+                                                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                                    <span class="sr-only">Next</span>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <div class="card-header" id="headingFour">
+                                    <h2 class="mb-0">
+                                        <button class="btn btn-link btn-block text-left collapsed desc btm" type="button" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseThree">
+                                            Bloodborne
+                                        </button>
+                                    </h2>
+                                </div>
+                                <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#accordion">
+                                    <div class="card-body" style="border: 2px solid #fff;">
+                                        <p class="desc">
+                                            La storia è ambientata nella città gotica di Yarnam, famosa per la presenza della "Chiesa della cura",
+                                            inventrice del sangue curativo capace di guarire ogni male. L'unica controindicazione è che in breve tempo
+                                            si ci trasforma in orribili bestie. La città viene quindi distrutta.<br/>
+                                            Un viaggiatore, giunto li per il sangue, all'oscuro di tutto, stringe un contratto con un uomo
+                                            misterioso. Miracolosamente l'uomo riesce a resistere alla maledizione del sangue diventando, contro
+                                            la sua volontà, un caccaitore di belve col compito di uccidere i mostri creati dal sangue.
+                                            Impara anche presto ad accedere al "sogno del cacciatore": un luogo sicuro che funge da officina e
+                                            negozio. In esso sono presenti due personoggi: un ex cacciatore sulla sedia a rotelle, che darà consigli
+                                            al giocatore e un'automa che permetterà al giocatore di potenziarsi.<br/>
+                                            Il gioco ha una grafica molto avanzata, anche se uscito nel 2015, e le ambientazioni sono decorate
+                                            con cura. Il combattimento è basato sulla breve distanza, ma sono presenti armi da fuoco,
+                                            in una varietà incrediebile; il gioco ha fatto parlare di sè soprattutto per la difficoltà
+                                            altissima anche nelle prime fasi. La particolarità di questo titolo sta nella storia: infatti
+                                            essa non è raccontata attraverso personaggi o missioni, ma deve essere ricostruita dagli indizi
+                                            che si trovano su alcuni testi trovabili in giro, oppure nella descrizione degli oggetti e così via.
+                                        </p>
+                                        <div class="w-75" style="margin: 0 auto;">
+                                            <div id="BloodBorne" class="carousel slide" data-ride="carousel">
+                                                <div class="carousel-inner">
+                                                    <div class="carousel-item active">
+                                                        <img src="img/Bloodborne.jpg" class="d-block w-100">
+                                                    </div>
+                                                    <div class="carousel-item">
+                                                        <img src="img/Bloodborne%201.jpg" class="d-block w-100">
+                                                    </div>
+                                                    <div class="carousel-item">
+                                                        <img src="img/Bloodborne%202.png" class="d-block w-100">
+                                                    </div>
+                                                </div>
+                                                <a class="carousel-control-prev" href="#BloodBorne" role="button" data-slide="prev">
+                                                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                                    <span class="sr-only">Previous</span>
+                                                </a>
+                                                <a class="carousel-control-next" href="#BloodBorne" role="button" data-slide="next">
+                                                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                                    <span class="sr-only">Next</span>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+    </body>
+</html>
